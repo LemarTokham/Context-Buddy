@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name":"Text Highlighter Definition",
+    "version": "1.0",
+    "description": "Highligts and logs it to console",
+
+    "permissions":[
+        "activeTab"
+    ],
+
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js":["content.js"]
+        }
+    ]
+}
