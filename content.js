@@ -1,9 +1,11 @@
 // Script that runs on actual web pages
 console.log("Text Highlighter extension ready to go")
 
+// Creating the popup
 const popup = document.createElement('div')
 popup.className = 'definition-popup hidden' // Starting the popup as hidden initially
 document.body.appendChild(popup)
+
 
 function showPopup(text, x, y){
     popup.innerHTML = `
@@ -13,11 +15,11 @@ function showPopup(text, x, y){
     `;
 
     popup.style.left = x + 'px'
-    popup.style.top = (y + 20) + 'px'
+    popup.style.top = (y + 20) + 'px' // Abit of room below the cursor
 
     popup.classList.remove('hidden')
-
 }
+
 
 function hidePopup() {
     popup.classList.add('hidden')
@@ -30,7 +32,9 @@ document.addEventListener('mouseup', (e) => {
     if (selectedText.length > 0){
         console.log("Highlighted:" , selectedText)
 
-        const x = e.pageX
+
+        // Get the cursor coordinates
+        const x = e.pageX 
         const y = e.pageY
 
         showPopup(selectedText, x, y)
@@ -38,9 +42,8 @@ document.addEventListener('mouseup', (e) => {
     }
 })
 
-
+// When the user clicks anywhere on the page the popup will be hidden
 document.addEventListener('mousedown', () => {
     hidePopup()
 })
 // new password: ekmuGei7o
-// Mesasi@230_mexico
