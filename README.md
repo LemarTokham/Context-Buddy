@@ -9,10 +9,9 @@ A way for me to stop making new tabs just to look up what a word or phrase means
 - Creating functionality on any page that can be toggled on or off
 
 # How to use
- - Coming soon
+ - coming soon
 
 ## Blockers
 - Figuring out how to hide API key
 
-## Demo
-![Demo](demo.gif)
+
