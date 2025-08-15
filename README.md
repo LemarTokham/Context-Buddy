@@ -15,3 +15,6 @@ A way for me to stop making new tabs just to look up what a word or phrase means
 - Figuring out how to hide API key
 
 
+Demo:
+https://github.com/user-attachments/assets/fd02e865-c0ec-439f-83b4-964ae54e6620
+
