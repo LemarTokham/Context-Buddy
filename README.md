@@ -8,7 +8,7 @@ A way for me to stop making new tabs just to look up what a word or phrase means
 - Making it usable for others who clone the repo
 - Creating functionality on any page that can be toggled on or off
 
-# How to use
+## How to use
  - coming soon
 
 ## Blockers
