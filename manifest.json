@@ -1,18 +1,30 @@
 {
     "manifest_version": 3,
-    "name":"Text Highlighter Definition",
+    "name": "Context Buddy",
     "version": "1.0",
-    "description": "Highligts and logs it to console",
-
-    "permissions":[
-        "activeTab"
+    "description": "Get AI-powered contextual definitions for any highlighted text",
+    
+    "permissions": [
+        "activeTab",
+        "storage"
     ],
-
+    
+    "background": {
+        "service_worker": "background.js"
+    },
+    
     "content_scripts": [
         {
-            "matches":["https://developer.chrome.com/docs/extensions/*"],
-            "js":["content.js"],
-            "css":["styles.css"]
+            "matches": [
+                "https://*.wikipedia.org/*",
+                "https://*.medium.com/*",
+                "https://*.stackoverflow.com/*",
+                "https://*.github.com/*",
+                "https://developer.mozilla.org/*",
+                "https://*.reddit.com/*"
+            ],
+            "js": ["content.js"],
+            "css": ["styles.css"]
         }
     ]
 }

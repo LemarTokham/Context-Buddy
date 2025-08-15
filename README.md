@@ -15,3 +15,4 @@ A way for me to stop making new tabs just to look up what a word or phrase means
 
 ## Blockers
 - Getting an AI API
+
